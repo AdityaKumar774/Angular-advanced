@@ -1,0 +1,33 @@
+<!Doctype html>
+<html lang="en" ng-app="ngTodo">
+	<title> List Gen </title>
+	<head>
+		<script src="angular.js"></script>
+		<link rel="stylesheet" type="text/css" href="font-awesome.css">
+		<link rel="stylesheet" type="text/css" href="style.css">
+	</head>
+	<body>
+		<div></div>
+		<div ng-controller="mainController">
+			<input type="text" ng-model="user.title" placeholder="Title">
+			<input type="text" ng-model="user.details" placeholder="Details">
+			<button ng-click="addTodolist(user)"> Add </button>
+			<input type="text" ng-model="search" placeholder="Search">
+			<h2> Things to Do </h2>
+			
+			<div class="myList" ng-repeat="Todo in todolists | filter:search">
+			<h2>
+				{{ Todo.title }} :
+			</h2>
+				<p>{{ Todo.details}}</p>	&nbsp; 
+				<button type="button" ng-click="deleteTodolist(Todo)"> 
+					<i class="fa fa-trash-o fa-3x"></i> </button>
+			</div>
+		
+		</div>
+		<div></div>
+		<div></div>
+		
+		<script src="main.js"></script>
+	</body>
+</html>
