@@ -36,8 +36,7 @@ ngTodo.controller('mainController', function($scope){
 		$scope.todolists.push(details);
 	};
 	
-	$scope.deleteTodolist = function(Todo) {
-		var index = $scope.todolists.indexOf(Todo);
+	$scope.deleteTodolist = function(index) {
 		$scope.todolists.splice(index, 1);
 	}
 	
