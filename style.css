@@ -1,3 +1,11 @@
 .myList{
 	border: 2px solid #000;
+	padding-bottom: 20px;
+	padding-left: 20px;
+	margin-bottom: 10px;
+}
+
+input{
+	height: 30px;
+	width: 300px;
 }
