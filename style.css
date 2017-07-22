@@ -1,11 +1,26 @@
+body{
+	background-color: aqua;
+}
+
 .myList{
 	border: 2px solid #000;
 	padding-bottom: 20px;
 	padding-left: 20px;
 	margin-bottom: 10px;
+	background-color: dodgerblue;
+	font-weight: 800;
 }
 
 input{
 	height: 30px;
 	width: 300px;
+	background-color: azure;
+}
+
+input:hover{
+	background-color: mediumaquamarine;
+}
+
+.addButton{
+	height: 35px;
 }
